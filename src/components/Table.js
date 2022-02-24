@@ -1,12 +1,13 @@
 import { Grid } from "gridjs-react";
 import "gridjs/dist/theme/mermaid.css";
+import { columns } from "constant/data-table";
 
 function Table ({ items = [] }) {
   return (
     <div className="data-table">
       <Grid
         data={items}
-        columns={['Komoditas', 'Harga', 'Ukuran', 'Area', 'Tanggal']}
+        columns={columns}
         search={true}
         sort={true}
         pagination={{
