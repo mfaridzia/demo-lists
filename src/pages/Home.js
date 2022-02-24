@@ -17,21 +17,23 @@ function Home () {
     komoditas: item.komoditas,
     harga: formatCurrency(Number(item.price)),
     ukuran: Number(item.size),
-    area: item.area_kota + ', ' + item.area_provinsi,
+    daerah: item.area_kota + ', ' + item.area_provinsi,
     tanggal: dateConverterDataOrder(item.tgl_parsed)
   }));
 
   const filteredLists = lists.filter(item => {
-    return item.uuid && item.komoditas && item.harga && item.ukuran && item.area && item.tanggal
+    return item.uuid && item.komoditas && item.harga && item.ukuran && item.daerah && item.tanggal
   });
 
   return (
     <>
       <Header />
       <Wrapper>
-        <h3 className="content_title"> 
-          Harga Komoditas Ikan di Indonesia 
-        </h3>
+        <section className="content_header">
+          <h3 className="content_title"> 
+            Harga Komoditas Ikan di Indonesia 
+          </h3>
+        </section>
         <Table items={filteredLists} />
       </Wrapper>
     </>

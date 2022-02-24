@@ -18,7 +18,7 @@ export function columnConfig (history) {
       compare: compare()
     }
   },{
-    name: 'Area',
+    name: 'Daerah',
   },{
     name: 'Tanggal',
   }, {

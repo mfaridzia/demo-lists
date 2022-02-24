@@ -1,4 +1,27 @@
+.content_header {
+  display: flex;
+}
+
+.content_btn-add {
+  background-color: #28b796;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  height: 40px;
+  position: relative;
+  top: 35px;
+  width: 120px;
+}
+
+.content_btn-add:hover {
+  background-color: #209e81;
+}
+
 .content_title {
-  margin-bottom: 20px;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 25px;
   padding-top: 35px;
 }
