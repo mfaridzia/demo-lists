@@ -1,4 +1,4 @@
-function addSchema (area_option, size) {
+function addSchema (size, area_option) {
   return {
     Komoditas: {
       type: 'text',
