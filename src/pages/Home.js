@@ -1,13 +1,12 @@
-import { useQuery } from "react-query";
-import { getList } from "services/api";
 import Header from "components/Header";
 import Wrapper from "components/Wrapper";
 import Table from "components/Table";
+import useLists from "hooks/useLists";
 import { dateConverterDataOrder } from "utils/dateConverter";
 import { formatCurrency } from "utils/currency";
 
 function Home () {
-  const { data, isLoading, error } = useQuery('lists', getList);
+  const { data, isLoading, error } = useLists();
 
   if (isLoading) return "Loading....";
   if (error) return `${error.message}`;

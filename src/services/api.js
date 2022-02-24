@@ -4,8 +4,8 @@ import SteinConfig from "../constant/stein";
 const store = new SteinStore(SteinConfig.base_url);
 
 export const option = {
-  area: () => store.read(SteinConfig.option_area),
-  size: () => store.read(SteinConfig.option_size)
+  getArea: () => store.read(SteinConfig.option_area),
+  getSize: () => store.read(SteinConfig.option_size)
 };
 
 export function getList () {
