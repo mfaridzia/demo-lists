@@ -12,6 +12,7 @@ function AddData () {
   const { data: size, isLoading: isLoadingSize } = useSize();
   const { data: area, isLoading: isLoadingArea } = useArea();
   const mutation = useAddList();
+
   const handleOnSubmit = (params) => {
     const optionArea = params.Daerah.value.split(",");
     const payload = {
@@ -46,7 +47,7 @@ function AddData () {
   }));
 
   return (
-    <div className="form_wrapper">
+    <div className="">
       <Form 
         model={addSchema(transformSize, transformArea)}
         onSubmit={handleOnSubmit}

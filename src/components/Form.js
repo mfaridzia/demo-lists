@@ -1,13 +1,18 @@
 import JsonToForm from "json-reactform";
+import Header from "components/Header";
+import Wrapper from "components/Wrapper";
 
 function Form ({ model, onSubmit }) {
   return (
-    <div className="form_wrapper">
-      <JsonToForm 
-        model={model} 
-        onSubmit={onSubmit} 
-      />
-    </div>
+    <>
+      <Header />
+      <div className="form_wrapper">
+        <JsonToForm 
+          model={model} 
+          onSubmit={onSubmit} 
+        />
+      </div>
+    </>
   )
 }
 

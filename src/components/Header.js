@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/efishery_logo.png";
 
 function Header () {
+  const { pathname } = useLocation();
+  const checkPathname = () => pathname === "/";
+  
   return (
     <header className="efishery_header">
       <nav className="efishery_navbar">
@@ -12,7 +15,13 @@ function Header () {
             src={Logo} 
           />
         </Link>
-        <Link to="/create" className="efishery_link-add"> Tambah Data </Link>
+
+        <Link 
+          to={checkPathname() ? "/create" : "/"} 
+          className="efishery_link-add"
+        > 
+          {checkPathname() ? "Tambah Data" : "Home"}
+        </Link>
       </nav>
     </header>
   )

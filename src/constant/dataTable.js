@@ -23,6 +23,7 @@ export function columnConfig (history) {
     name: 'Tanggal',
   }, {
     name: 'Aksi',
+    sort: false,
     formatter: (_, row) => {
       return h('button', {
         className: 'btn-edit',
