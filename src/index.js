@@ -4,7 +4,11 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  staleTime: 60 * 1000 * 10,
+  refetchOnMount: false,
+  refetchOnWindowFocus: false
+});
 
 ReactDOM.render(
   <React.StrictMode>
