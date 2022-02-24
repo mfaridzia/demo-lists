@@ -2,7 +2,7 @@ import Logo from "../assets/efishery_logo.png";
 
 function Header () {
   return (
-    <header class="efishery_header">
+    <header className="efishery_header">
       <img 
         className="efishery_logo"
         alt="eFishery Logo" 
