@@ -1,13 +1,15 @@
+import { useHistory } from "react-router-dom";
 import { Grid } from "gridjs-react";
 import "gridjs/dist/theme/mermaid.css";
-import { columns } from "constant/data-table";
+import { columnConfig } from "constant/data-table";
 
 function Table ({ items = [] }) {
+  let history = useHistory();
   return (
     <div className="data-table">
       <Grid
         data={items}
-        columns={columns}
+        columns={columnConfig(history)}
         search={true}
         sort={true}
         pagination={{
@@ -18,6 +20,11 @@ function Table ({ items = [] }) {
           'search': {
             'placeholder': '🔍 Cari Komoditas Ikan...'
           },
+        }}
+        style={{
+          table: {
+            'font-size': '13px'
+          }
         }}
       />
     </div>

@@ -1,0 +1,11 @@
+.btn-edit {
+  margin-right: 10px;
+  @include btn(rgb(69, 153, 233));
+}
+.btn-edit:hover {
+  background-color: rgb(58, 141, 218);
+}
+
+.btn-delete {
+  @include btn(rgb(245, 69, 69));
+}

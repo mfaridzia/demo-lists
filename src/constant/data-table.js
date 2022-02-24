@@ -1,33 +1,35 @@
-export const columns = [{
-  name: 'Komoditas'
-},{
-  name: 'Harga',
-  sort: {
-    compare: (a, b) => {
-      if (a > b) {
-        return 1;
-      } else if (b > a) {
-        return -1;
-      } else {
-        return 0;
-      }
+import { h } from "gridjs";
+import { compare } from "utils/compare";
+
+export function columnConfig (history) {
+  const columns = [{
+    name: 'uuid',
+    hidden: true
+  },{
+    name: 'Komoditas',
+  },{
+    name: 'Harga',
+    sort: {
+      compare: compare()
     }
-  }
-},{
-  name: 'Ukuran',
-  sort: {
-    compare: (a, b) => {
-      if (a > b) {
-        return 1;
-      } else if (b > a) {
-        return -1;
-      } else {
-        return 0;
-      }
+  },{
+    name: 'Ukuran',
+    sort: {
+      compare: compare()
     }
-  }
-},{
-  name: 'Area'
-},{
-  name: 'Tanggal'
-}];
+  },{
+    name: 'Area',
+  },{
+    name: 'Tanggal',
+  }, {
+    name: 'Aksi',
+    formatter: (_, row) => {
+      return h('button', {
+        className: 'btn-edit',
+        onClick: () => history.push(`update/${row.cells[0].data}`)
+      }, 'Edit');
+    }
+  }];
+
+  return columns;
+}

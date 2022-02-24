@@ -9,6 +9,9 @@ export default function App() {
           <Route path="/create">
             Add
           </Route>
+          <Route path="/update/:uuid">
+            Update Data
+          </Route>
           <Route path="/">
             <Home />
           </Route>

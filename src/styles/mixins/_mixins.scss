@@ -1,0 +1,11 @@
+@mixin btn($bgColor) {
+  background-color: $bgColor;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
