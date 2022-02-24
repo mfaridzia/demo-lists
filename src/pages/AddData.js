@@ -5,13 +5,13 @@ import addSchema from "schema/add";
 import useSize from "hooks/useSize";
 import useArea from "hooks/useArea";
 import useAddList from "hooks/useAddList";
+import toast from "utils/toast";
 
 function AddData () {
   const history = useHistory();
   const { data: size, isLoading: isLoadingSize } = useSize();
   const { data: area, isLoading: isLoadingArea } = useArea();
   const mutation = useAddList();
-
   const handleOnSubmit = (params) => {
     const optionArea = params.Daerah.value.split(",");
     const payload = {
@@ -27,10 +27,12 @@ function AddData () {
 
     mutation.mutate(payload, {
       onSuccess: () => {
+        toast(true, "Berhasil menambahkan komoditas");
         history.push("/");
       },
-      onError: (error) => {
-        console.log(error);
+      onError: () => {
+        toast(true, "Gagal menambahkan komoditas");
+        history.push("/");
       }
     });
   }

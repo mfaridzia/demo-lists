@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 import { Grid } from "gridjs-react";
 import "gridjs/dist/theme/mermaid.css";
-import { columnConfig } from "constant/data-table";
+import { columnConfig } from "constant/dataTable";
 
 function Table ({ items = [] }) {
   let history = useHistory();
