@@ -19,9 +19,39 @@
   background-color: #209e81;
 }
 
-.content_title {
+.content_box {
   margin-right: auto;
   margin-top: 70px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   padding-top: 35px;
+  display: flex;
+}
+
+.content_filter {
+  position: relative;
+  left: -180px;
+  top: 63px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 640px) {
+  .content_box {
+    flex-direction: column;
+  }
+
+  .content_filter {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .content_filter {
+    position: relative;
+    left: 10px;
+    top: 0px;
+    z-index: 2;
+  }
 }
