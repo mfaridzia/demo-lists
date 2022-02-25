@@ -22,9 +22,9 @@ https://uxplanet.org/ux-infinite-scrolling-vs-pagination-1030d29376f1
 
 ## Mengurutkan, Mencari dan Memfilter Data
 
-Pada situs ini, data yang di tampilkan dapat digunakan untuk melakukan pengurutan(baik secara asc maupun desc) berdasarkan kolom(komoditas, harga, ukuran, area dan tanggal) dengan menggunakan icon arrow(up & down) di header data table nya.
+Pada situs ini, dapat melakukan pengurutan(baik secara asc maupun desc) berdasarkan kolom(komoditas, harga, ukuran, area dan tanggal) dengan menggunakan icon arrow(up & down) di header data table nya.
 
-Untk Filter nya sendiri dapat memfilter berdasakan kolom(komoditas, harga, ukuran, area dan tanggal) yang ada pada dropdown form filter by.
+Untk Filter nya sendiri dapat di filter berdasakan kolom(komoditas, harga, ukuran, area dan tanggal) yang ada pada dropdown form filter by.
 
 Dan untuk mencari(search) data, masih sama, berdasarkan kolom(komoditas, harga, ukuran, area dan tanggal).
 
