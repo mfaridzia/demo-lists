@@ -48,10 +48,19 @@ function AddData () {
   return (
     <>
       <Header />
-      <Form 
-        model={addSchema(transformSize, transformArea)}
-        onSubmit={handleOnSubmit}
-      />
+      <div className="add_form-wrapper">
+        <div className="add_box-title">
+          <h4 className="add_form-title"> 
+            Tambah Data Komoditas 
+          </h4>
+        </div>
+
+        <Form 
+          model={addSchema(transformSize, transformArea)}
+          onSubmit={handleOnSubmit}
+        />
+      </div>
+     
     </>
   )
 }

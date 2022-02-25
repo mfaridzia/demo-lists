@@ -3,28 +3,28 @@
   margin: 0 auto;
 }
 
-.update_form-title {
+.update_form-title, .add_form-title  {
   width: 70%;
   margin-right: auto;
 }
 
-.update_form-wrapper {
+.update_form-wrapper, .add_form-wrapper {
   padding-top: 110px;
 }
 
-.update_box-title {
+.update_box-title, .add_box-title {
   display: flex;
   margin: 0 auto 50px;
   width: 70%;
 }
 
 @media screen and (max-width: 360px) {
-  .update_box-title {
+  .update_box-title, .add_box-title {
     display: flex;
     flex-direction: column;
   }
 
-  .update_form-title {
+  .update_form-title, .add_form-title {
     width: 100%;
     margin-bottom: 20px;
   }
