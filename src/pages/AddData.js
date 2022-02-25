@@ -2,15 +2,13 @@ import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import Form from "components/Form";
 import addSchema from "schema/add"; 
-import useSize from "hooks/useSize";
-import useArea from "hooks/useArea";
+import useOptions from "hooks/useSizeArea";
 import useAddList from "hooks/useAddList";
 import toast from "utils/toast";
 
 function AddData () {
   const history = useHistory();
-  const { data: size, isLoading: isLoadingSize } = useSize();
-  const { data: area, isLoading: isLoadingArea } = useArea();
+  const { size, area, isLoadingSize, isLoadingArea } = useOptions();
   const mutation = useAddList();
 
   const handleOnSubmit = (params) => {
