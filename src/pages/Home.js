@@ -2,6 +2,7 @@ import Header from "components/Header";
 import Wrapper from "components/Wrapper";
 import Table from "components/Table";
 import Spinner from "components/Spinner";
+import Error from "components/Error";
 import useLists from "hooks/useLists";
 import { dateConverterDataOrder } from "utils/dateConverter";
 import { formatCurrency } from "utils/currency";
@@ -10,7 +11,10 @@ function Home () {
   const { data, isLoading, error } = useLists();
 
   if (isLoading) return <Spinner />;
-  if (error) return `${error.message}`;
+  
+  if (error) {
+    return <Error message={error.message} />;
+  }
 
   const lists = data.map(item => ({
     uuid: item.uuid,
