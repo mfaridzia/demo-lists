@@ -1,9 +1,11 @@
-# eFishery Commodity
+[![Netlify Status](https://api.netlify.com/api/v1/badges/46d12216-f079-4182-acd1-414304bc3f0d/deploy-status)](https://app.netlify.com/sites/efishery-lists/deploys)
+
+# eFishery Commodity Lists
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Live Demo
-[Demo](https://github.com/facebook/create-react-app)
+[Demo](https://efishery-lists.netlify.app)
 
 ## Getting Started
 
