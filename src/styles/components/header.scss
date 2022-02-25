@@ -35,3 +35,11 @@
 .efishery_link-add:hover {
   color: rgb(236, 236, 236);
 }
+
+@media screen and (max-width: 400px) {
+  .efishery_logo {
+    width: 100px;
+    height: 35px;
+    padding-top: 0px;
+  }
+}
