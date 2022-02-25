@@ -6,6 +6,7 @@ import Spinner from "components/Spinner";
 import addSchema from "schema/add"; 
 import useOptions from "hooks/useSizeArea";
 import useAddList from "hooks/useAddList";
+import { transformSize, transformArea } from "utils/transformOptions";
 import toast from "utils/toast";
 
 function AddData () {
@@ -42,12 +43,6 @@ function AddData () {
     return <Spinner />;
   }
 
-  const transformSize = size?.map(item => ({ value: item.size, label: item.size }));
-  const transformArea = area?.map(item => ({
-    value: item.province + ', ' + item.city,
-    label: item.province + ', ' + item.city
-  }));
-
   return (
     <>
       <Header />
@@ -59,7 +54,7 @@ function AddData () {
         </div>
 
         <Form 
-          model={addSchema(transformSize, transformArea)}
+          model={addSchema(transformSize(size), transformArea(area))}
           onSubmit={handleOnSubmit}
         />
       </div>
