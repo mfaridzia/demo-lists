@@ -42,6 +42,7 @@ Di situs ini juga sudah dilakukan caching terhadap datanya (menggunakan React Qu
 
 Jadi selama datanya masih fresh dan belum stale, data akan selalu di ambil dari cache. Ini tentu secara tidak langsung akan meningkatkan pengalaman pengguna ketika mengakses suatu halaman. Dimana UX nya lebih cepat daripada harus meload data yang sama ke server lagi yang mana tentu akan memakan waktu lagi.
 
+## Kendala
 
-
+Ada sedikit kendala terkait API untuk tambah data, ketika menambahkan data, urutan data yang terisi berbeda, padahal payload sudah sesuai, misalkan data komoditas malah terisi dengan data uuid, dsb. 
 
