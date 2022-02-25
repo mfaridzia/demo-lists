@@ -2,11 +2,11 @@ import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import Form from "components/Form";
 import Header from "components/Header";
+import Spinner from "components/Spinner";
 import addSchema from "schema/add"; 
 import useOptions from "hooks/useSizeArea";
 import useAddList from "hooks/useAddList";
 import toast from "utils/toast";
-import Spinner from "components/Spinner";
 
 function AddData () {
   const history = useHistory();
