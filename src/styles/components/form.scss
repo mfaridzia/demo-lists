@@ -1,5 +1,44 @@
 .form_wrapper {
   width: 70%;
   margin: 0 auto;
+}
+
+.update_form-title {
+  width: 70%;
+  margin-right: auto;
+}
+
+.update_form-wrapper {
   padding-top: 110px;
+}
+
+.update_box-title {
+  display: flex;
+  margin: 0 auto 50px;
+  width: 70%;
+}
+
+@media screen and (max-width: 360px) {
+  .update_box-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .update_form-title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.update_btn-delete {
+  background-color: rgb(233, 59, 59);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.update_btn-delete:hover {
+  background-color: rgb(243, 74, 74);
 }

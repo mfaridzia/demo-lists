@@ -1,6 +1,7 @@
 import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import Form from "components/Form";
+import Header from "components/Header";
 import addSchema from "schema/add"; 
 import useOptions from "hooks/useSizeArea";
 import useAddList from "hooks/useAddList";
@@ -45,12 +46,13 @@ function AddData () {
   }));
 
   return (
-    <div className="">
+    <>
+      <Header />
       <Form 
         model={addSchema(transformSize, transformArea)}
         onSubmit={handleOnSubmit}
       />
-    </div>
+    </>
   )
 }
 
