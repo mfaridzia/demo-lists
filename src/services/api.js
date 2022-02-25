@@ -1,5 +1,5 @@
 import SteinStore from "stein-js-client";
-import SteinConfig from "../constant/stein";
+import SteinConfig from "constant/stein";
 
 const store = new SteinStore(SteinConfig.base_url);
 

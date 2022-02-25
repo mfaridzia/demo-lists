@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "components/Header";
 import Wrapper from "components/Wrapper";
 import Table from "components/Table";
@@ -39,7 +39,7 @@ function Home () {
   });
 
   const filteredLists = filterBy && filterInput ? filteredBy : filteredNullValue;
-  
+
   return (
     <>
       <Header />

@@ -1,18 +1,32 @@
-# Getting Started with Create React App
+# eFishery Commodity
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Live Demo
+[Demo](https://github.com/facebook/create-react-app)
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+Clone this repository and run the following command in terminal to install the dependencies.
+```
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After that, in the project directory, run the development server:
+```
+  npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open http://localhost:3000 with your browser to see the result.
+
+# Tools 
+
+- React.js (JavaScript Libary)
+- React Query (Data Fetching & Caching & Server State Management)
+- Sass & React Bootstrap (Styling)
+
+
+# Available Scripts
 
 ### `npm test`
 

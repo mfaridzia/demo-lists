@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Toaster } from "react-hot-toast";
 import App from "./App";
-import queryObject from "constant/query";
+import { queryObject } from "constant/query";
 import reportWebVitals from "./reportWebVitals";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/styles.scss";
