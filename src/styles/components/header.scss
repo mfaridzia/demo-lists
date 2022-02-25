@@ -43,3 +43,9 @@
     padding-top: 0px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .efishery_navbar {
+    width: 90%;
+  }
+}

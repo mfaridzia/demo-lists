@@ -4,3 +4,9 @@
   margin: 0 auto 40px;
   width: 70%;
 }
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 90%;
+  }
+}

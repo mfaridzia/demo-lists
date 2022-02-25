@@ -18,18 +18,6 @@
   width: 70%;
 }
 
-@media screen and (max-width: 360px) {
-  .update_box-title, .add_box-title {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .update_form-title, .add_form-title {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
 .update_btn-delete {
   background-color: rgb(233, 59, 59);
   border: none;
@@ -41,4 +29,34 @@
 
 .update_btn-delete:hover {
   background-color: rgb(243, 74, 74);
+}
+
+@media screen and (max-width: 360px) {
+  .update_box-title, .add_box-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .update_form-title {
+    width: 100%;
+    order: 2;
+    margin-bottom: 0px;
+  }
+
+  .update_btn-delete {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .form_wrapper {
+    width: 90%;
+  }
+
+  .update_box-title, .add_box-title {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
 }
