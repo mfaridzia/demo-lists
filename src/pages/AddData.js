@@ -6,6 +6,7 @@ import addSchema from "schema/add";
 import useOptions from "hooks/useSizeArea";
 import useAddList from "hooks/useAddList";
 import toast from "utils/toast";
+import Spinner from "components/Spinner";
 
 function AddData () {
   const history = useHistory();
@@ -37,7 +38,9 @@ function AddData () {
     });
   }
 
-  if (isLoadingSize || isLoadingArea) return "Loading....";
+  if (isLoadingSize || isLoadingArea) {
+    return <Spinner />;
+  }
 
   const transformSize = size?.map(item => ({ value: item.size, label: item.size }));
   const transformArea = area?.map(item => ({

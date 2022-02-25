@@ -8,6 +8,7 @@ import useUpdateList from "hooks/useUpdateList";
 import useDeleteList from "hooks/useDeleteList";
 import toast from "utils/toast";
 import { transformSize, transformArea } from "utils/transformOptions";
+import Spinner from "components/Spinner";
 
 function Update () {
   const history = useHistory();
@@ -56,7 +57,7 @@ function Update () {
   }
 
   if (isLoadingSize || isLoadingArea || isLoadingSelectedData) {
-    return "Loading....";
+    return <Spinner />;
   }
 
   return (
